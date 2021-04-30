@@ -53,13 +53,13 @@ void loop() {
   
   
   if (buttonState == HIGH) {//if the button is not pressed...
-    buttonPosition = 1;
+    buttonPosition = 2;
     Serial.write(buttonPosition);//write "1" to the serial monitor
     
   } 
   else if(buttonState == LOW) {//if the button is pressed...
     shipMovementFunction();
-    buttonPosition = 2;
+    buttonPosition = 1;
      Serial.write(buttonPosition);//write "2" to the serial monitor
   }
 
